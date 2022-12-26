@@ -34,8 +34,8 @@ export default function TextEditor() {
     // useParams allows us to access the parameters of the current URL.
 
     useEffect(() => {
-        const sckt = io('http://localhost:3001')
-        // const sckt = io('https://docs-backend-production.up.railway.app')
+        // const sckt = io('http://localhost:3001')
+        const sckt = io('https://docs-backend-production.up.railway.app')
 
         setSocket(sckt);
         return () => {
