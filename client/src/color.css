@@ -1,0 +1,22 @@
+.dark {
+    background-color: rgb(36, 35, 35);
+    /* color: white; */
+}
+
+.light {
+    background-color: rgb(235, 233, 233);
+    /* color: rgb(36, 35, 35); */
+}
+
+.toggle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.toggle button {
+    border-radius: 30px;
+    height: 40px;
+    width: 130px;
+}
