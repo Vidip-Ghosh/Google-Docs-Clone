@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 const Document = require('./Document');
-
+// https://docs-frontend-seven.vercel.app
 mongoose.set("strictQuery", false);
 mongoose.connect("mongodb://localhost/google-docs-clone")
-
-const io = require("socket.io")(3001, {
+var port = process.env.PORT || 3001;
+const io = require("socket.io")(port, {
     cors: {
+        // origin: "https://docs-frontend-seven.vercel.app",
         origin: "http://localhost:3000",
         methods: ["GET", "POST"],
     },

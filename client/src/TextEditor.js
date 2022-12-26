@@ -35,6 +35,8 @@ export default function TextEditor() {
 
     useEffect(() => {
         const sckt = io('http://localhost:3001')
+        // const sckt = io('https://docs-backend-production.up.railway.app')
+
         setSocket(sckt);
         return () => {
             sckt.disconnect();
